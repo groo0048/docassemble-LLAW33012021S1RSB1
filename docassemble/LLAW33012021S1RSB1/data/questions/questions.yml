@@ -1,0 +1,54 @@
+---
+mandatory: True
+question: |
+  What support is available?
+subquestion: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies malesuada nunc. Praesent vitae nisi ornare, scelerisque lectus nec, interdum ante. Ut dolor magna, pharetra at tempus vitae, varius eget purus.
+  
+  <br>
+  %for support in NDIS_supports:
+  <div class="card support_card">
+    <div class="card-body">
+      <h5 class="card-title">${ support['support'] }</h5>
+      <p>${ support['bio'] }</p>
+      <button type="button" onclick="action_perform('open_support', {support: '${ support['support'] }'})">Read More</button>
+    </div>
+  </div>
+  %endfor  
+pre: |
+      <div class="banner">
+        <div class="search-center">
+          <h1>How can we help you?</h1>
+        
+          <input type="text" placeholder="Search.." id="search-bar" onkeyup="searchFilter()" autocomplete="off">
+      
+          <div id="search-content">
+            %for service in NDIS_services:
+            <a onclick="action_perform('open_service', {service: '${ service['service'] }'})">${ service['service'] }</a>
+            %endfor
+          </div>
+        </div>
+      </div>
+script: |
+  <script>
+    /* Search Bar from https://www.w3schools.com/howto/howto_js_filter_dropdown.asp */
+    
+    function searchFilter() {
+      var input, filter, a, i;
+      
+      input = document.getElementById("search-bar");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("search-content");
+      a = div.getElementsByTagName("a");
+      
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length > 0) {
+          a[i].style.display = "block";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+---

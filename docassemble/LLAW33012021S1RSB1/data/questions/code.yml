@@ -1,0 +1,13 @@
+---
+event: open_support
+code: |
+  support_opened = action_argument('support')
+  
+  endpoint['open_support']
+---
+event: open_service
+code: |
+  service_opened = action_argument('service')
+  
+  endpoint['open_service']
+---

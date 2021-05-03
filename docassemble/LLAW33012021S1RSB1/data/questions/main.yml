@@ -1,0 +1,120 @@
+---
+# Service developed for 'Royal Society for the Blind' by Flinders University Law and Computer Science Students.
+---
+metadata:
+  title: |
+    NDIS Guidance Service for Royal Society for the Blind
+  short title: |
+    NDIS Service Directory
+  authors:
+    - name: Jeremy Webster
+    - name: Abigail Groocock
+    - name: Josephine Khoury
+    - name: Kolby Gibbs
+    - name: Nick Pepaj
+  organisation: Flinders University
+  revision_date: 2021-04-21
+  show login: False
+  exit url: https://www.rsb.org.au/
+  exit label: Leave
+---
+include:
+  - services.yml
+  - code.yml
+  - templates.yml
+---
+features:
+  css: style.css
+  progress bar: False
+  show progress bar percentage: False
+  debug: True
+  navigation back button: True
+  hide standard menu: True
+  small screen navigation: True # Show dropdown when in mobile
+---
+objects:
+  - endpoint: DADict
+  - image_logo: DAStaticFile.using(filename='logo.png')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + image_logo.url_for() + '" style="height: 50px;">')
+---
+default screen parts:
+  post: |
+    ${ template_footer }
+---
+mandatory: True
+question: NDIS Service Directory
+subquestion: |
+  ${ template_disclaimer }
+buttons:
+  - "Accept and continue": continue
+  - "I do not accept": exit
+    url: https://www.rsb.org.au/
+under: |
+  ${ template_disclaimer_under }
+---
+include:
+  - questions.yml
+---
+event: endpoint['successful']
+question: You are Eligible!
+subquestion: |
+  ${ template_successful }
+buttons:
+  - Exit: exit
+    url: https://www.rsb.org.au/
+  - Restart: restart
+progress: 100
+---
+event: endpoint['error']
+question: You are not Eligible
+subquestion: |
+  ${ template_error }
+buttons:
+  - Exit: exit
+    url: https://www.rsb.org.au/
+  - Restart: restart
+progress: 100
+---
+event: endpoint['open_support']
+question: |
+  ${ support_opened }
+subquestion: |
+  % if support_opened == 'Core Support':
+    ${ template_core }
+  % endif
+  
+  % if support_opened == 'Capital Support':
+    ${ template_capital }
+  % endif
+  
+  % if support_opened == 'Capacity Building Support':
+    ${ template_capacity }
+  % endif
+buttons:
+  - Exit: exit
+    url: https://www.rsb.org.au/
+  - Restart: restart
+progress: 100
+---
+event: endpoint['open_service']
+question: |
+  ${ service_opened }
+subquestion: |
+  ${ template_successful }
+  
+  ${ service_opened }
+buttons:
+  - Exit: exit
+    url: https://www.rsb.org.au/
+  - Restart: restart
+progress: 100
+---
+interview help:
+  label: Help
+  heading: NDIS Basics
+  content: |
+    ${ template_help }
+---

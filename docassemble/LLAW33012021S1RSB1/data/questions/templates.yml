@@ -1,0 +1,165 @@
+---
+# ------------------------------------------------------
+#                   Layout Template's
+# ------------------------------------------------------
+---
+template: template_header
+content: |
+  <div class="banner"></div>
+---
+template: template_footer
+content: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: center">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with the Royal Society for the Blind
+    </i></small></cite>
+    </div>
+    </div>
+---
+# ------------------------------------------------------
+#                   Legal Template's
+# ------------------------------------------------------
+---
+template: template_disclaimer
+content: |
+  Welcome to the Royal Society for the Blinds NDIS Guidance Service (‘NDIS Guidance Service’). This application is designed to help you find and engage in services according to your needs within the National Disability Insurance Scheme.
+  <br><hr>
+  **Legal Advice Disclaimer**<br>
+  This application does not and should not be considered as official, legal advice. It is recommended that you seek your own, independent legal advice regarding the information given in this application.
+  <br><hr>
+  **Privacy Policy**<br>
+  The RSB is committed to protecting the privacy of personal information which the RSB collects, holds and administers.  The RSB will only collect information that is required for it to fulfil its contractual, ethical and legal responsibilities and provide quality and timely services. 
+
+  The RSB recognises the essential rights of individuals to have their information administered in ways which they would reasonably expect – protected on one hand and made accessible to them on the other.  These privacy values are reflected in RSB’s core values. 
+
+  By continuing you accept these terms and also the terms specified in the Royal Society for the Blind [privacy policy](https://www.rsb.org.au/privacy-policy).
+---
+template: template_disclaimer_under
+content: |
+  <br>
+  Information regarding NDIS is accurate as of *30th April 2021*, you should seek further assistance before moving forward with a provided service.
+---
+# ------------------------------------------------------
+#                   Support Template's
+# ------------------------------------------------------
+---
+template: template_core
+content: |
+  Description   | Example 
+  -------|-------
+  Assistance with Daily Life 
+  Support for any activity you need assistance or help with. | Cleaner, Gardener, Grocery Shopping delivery, etc
+  Consumables
+  Consumables are a support category available to assist participants with purchasing everyday use items. Not all supports in this category are consumable, but continence, home enteral nutrition (HEN) and disability-related health products are included in this category.  | Any product that would be used daily. For example: soap, shampoo,  food, cleaning products, low cost assistive technology, etc
+  Assistance with Daily Social and Community Participation
+  This support is to help create community and friendship in your life. Social events, activities or outings you need support with may be able to be funded here.  | social worker, support worker, transport (though this is a separate category as well), excursion costs, membership fees, etc
+  Transport
+  This is support that helps you travel to work or other places that will help you achieve the goals in your plan. How you can spend your transport funding and how it is paid to you (whether upfront or in regular payments) will be different for each person. Your LAC will explain how you can use this budget.  Transport funding is split into the 3 levels depending on your circumstances.  Level 1 = up to $1606 Level 2 = up to $2472 Level 3 = up to $3456  Important facts about transport funding  * this money is for your transport only, it may cover public transport but is most needed for those who cannot access public transport. It cannot pay for your carer or a family member to drive you around | bus, taxi, car service, train and plane
+  
+---
+template: template_capital
+content: |
+  Capital Supports are one of the three main funding categories, that often cover the most expensive or complicated items. There is little flexibility regarding the funding as all funds must be reasonable and necessary. This means they must be directly related to your disabiltiy and give you clear benefits.
+  There are two sub categories under Capital Supports: Assistive Technology and Home Modifications.
+  
+  **Assistive Technology**
+  Assistive Technology includes aids or equipment that help you live independently or helps your carer to look after you. It may include mobility aids and communication devices. The cost for assessments, set-up and training to use these assistive technologies are also covered in this funding category.
+  
+  **Level One Items (under $1500)**
+  Examples might include:
+  
+  * White canes and replacement tips and ball
+  * Optic Magnifiers; magnifying mirrors; magnifying lamps; and lights
+  * Talking and large faced watches and clocks
+  * Talking bathroom and kitchen scales
+  * Talking blood pressure monitor
+  * Talking themometer
+  * Pill organisers
+  * Finger guards; liquid level finders; needle threaders
+  * Talking timers
+  * Tactile markers and dots
+  * Vision Impaired person badges
+  * Large button landline phones
+  * Reading Stands
+  * UV shields and sunglasses
+  * Talking calculator
+  * Large print sodoku book
+  * Large print telephone book
+  * Signature guide; envelope guide
+  * Playing cards, braille cards, braille uno cards, large print scrabble board, tactile dominoes
+  * Colour detector
+  * Computer accessibility software
+  
+     **These items vary in price, so might go in either Level 2 (between $1500-$5000) or Level 3 (over $5000)**
+  Examples might include:
+  
+  * Desktop electronic magnifiers
+  * Text to speech devices
+  * Braille note-takers
+  
+  **Home Modifications**
+  Home Modfications cover the costs involved in making structural changes to your current home and adding specialised fittings and fixtures designed to help you live as safely, independently and comfortably as possible.
+  
+  Examples might include: 
+  
+  * Handrails in shower
+  * Marking personal items to assist with easier identification
+  * Reorganising wardrobe using tactile markings on clothing or coat hangers
+  * Trialling magnifying mirrors for makeup application
+  * Increasing lighting
+  * Grab rails, banister rails, ramps, larger steps, magnetic door catches and lighting.
+
+---
+template: template_capacity
+content: |
+  
+  Capacity building supports are those that help you to maintain your independence and build your skills. 
+  
+  There are nine Capacity Building support categories. You won’t automatically receive funding for all nine, instead funding for these will be based on your NDIS plan goals.
+  
+  **In your plan:**  | **Description:**|**How you could use it:**
+  -------|---------|
+  **Support coordination**  | Fixed amount that funds a Support Coordinator to help you best utilise your NDIS plan. | Asking your support coordinator to find and book an appointment with an allied health professional.
+  **Improved Living Arrangements** | Support that help you and maintain a place to live. | Using breakthu's service to help search for rental properties online and meeting tenancy obligations. 
+  **Increased Social & Community Participation**   | Supports that provide training and skills to manage life independently and increase participation in your community. | Helping finding, organising or attend communitu programs or group activities to build relationship skills. 
+  **Finding & Keeping a Job**  | Services to help you with employment-related supports, including training and assessments. | Assistance with training and education, updating your resume, applying for jobs and preparing for job interviews. 
+  **Improved Relationships** | Helps develop positive behaviours, including social skill development. | Regular face to face meetings with your therapist as part of a behaviour management plan.
+  **Improved Health & Wellbeing** | Services that help you manage diet, exercise, nutrition and physical weelbeing. | Getting access to a nutritionist who can create individualised healthy meal plans. 
+  **Improved Learning** |Supports that help research and apply for study or training opportunities. | Direct support with day to day learning activities like study schedules, adequate accomodation, time management and more. 
+  **Improved Life Choices** | Services to help you with your plan managment, organisational and self-management skills. | Engaging with a service provider to get financial assistance and plan management services. 
+  **Improved Daily Living** | Covers some services, therapy and/or training by a professional that can help to increase your skills, independence and community participation. These services can also be held individually or in groups. | Using breakthru's Occupational Therapy, Psychology & Counselling services to support your goals. 
+  
+---
+# ------------------------------------------------------
+#                   Endpoint Template's
+# ------------------------------------------------------
+---
+template: template_successful
+content: |
+  *** MISSING CONTENT ***
+---
+template: template_error
+content: |
+  You have indicated that you require other services not listed in this application.
+  
+  <br>Please contact the Royal Society for the Blind for information on the specific service type you require.<br>
+  <br>**Phone:** 1300 944 306<br>
+  **Website:** www.rsb.org.au<br>
+  **Email:** contact@rsb.org.au
+---
+template: template_help
+content: |
+  The National Disability Insurance Scheme (NDIS) is the Federal Government’s way of providing individualised support for people with a permanent disability. With the NDIS, you will have more choice and control over the support and services you receive and have far greater say in how you live your life.
+  
+  Support services that are funded by the NDIS aim to help you reach your goals, objectives and aspirations in a range of areas. These aim to help you to increase your independence, increase social and economic participation and develop your capacity to actively take part in the community. 
+    <br><hr>
+  # Who can help<br>
+  The RSB’s Independent Living Services provide people with vision loss with the necessary skills, equipment and strategies to live life as safely and as independently as possible. 
+  
+  The RSB has a team of trained Allied Health Professionals who can assess the needs of people with vision loss and make appropriate recommendations and teach them how to use a range of aids and techniques to assist them better manage everyday activities such as meal preparation, house cleaning, washing, ironing, personal grooming, gardening, and money management. 
+  <br>
+  *For further information about living with visual impairment and how the RSB’s range of Services can assist, call 1300 944 306 or email contact@rsb.org.au* 
+---

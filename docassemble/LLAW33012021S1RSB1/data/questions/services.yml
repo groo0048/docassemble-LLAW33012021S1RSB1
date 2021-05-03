@@ -1,0 +1,61 @@
+---
+# 
+# - service: NAME OF THE SERVICE
+#   support: TYPE OF SUPPOER (Core, Capitial, 
+#   category: CATEGORY NUMBER
+#           - Core
+#                - Category 1: Something
+#                - Category 2: Something
+#                - Category 3: Services
+#                - Category 4: Something
+---
+variable name: NDIS_supports
+user objects: true
+data:
+  - support: Core Support
+    categories:
+      - Assistance with Daily Life
+      - Transport
+      - Consumables
+      - Assistance with Social & Community Participation
+    bio: |
+      Core Supports help you with everyday activities, your current disability-related needs and to work towards your goals.
+  - support: Capital Support
+    categories:
+      - Assistive Technology
+      - Home Modifications
+    bio: |
+      Capital Supports include higher-cost pieces of assistive technology, equipment and home or vehicle modifications, and funding for one-off purchases you may need (including Specialist Disability Accommodation).
+  - support: Capacity Building Support
+    categories:
+      - Coordination of Supports
+      - Improved Living Arrangements
+      - Increased Social and Community Participation
+      - Finding and Keeping a Job
+      - Improved Relationships
+      - Improved Health and Wellbeing
+      - Improved Learning
+      - Improved Life Choices
+      - Improved Daily Living
+    bio: |
+      Capacity Building Supports help build your independence and skills to help you reach your long-term goals.
+---
+variable name: NDIS_services
+use objects: true
+data:
+	- service: Cleaner
+	  support: Core Support
+	  category: Assistance with Daily Life
+	  ndis_level: 0
+	  description: Once a week a cleaner will be sent to your house.
+  - service: Bus
+	  support: Core Support
+	  category: Transport
+    ndis_level: 0
+	  description: Once a week a cleaner will be sent to your house.
+  - service: Cook
+	  support: Core Support
+	  category: Assistance with Daily Life
+	  ndis_level: 0
+	  description: Once a week a cleaner will be sent to your house.
+---
